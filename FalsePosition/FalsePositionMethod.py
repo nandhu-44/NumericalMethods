@@ -1,8 +1,8 @@
 # Write a program to find roots of non linear equation using False Position method.
 
-__import__("os").system('cls' if __import__("os").name == 'nt' else 'clear')
+from math import sin, cos, exp, log, tan, pi, e
 
-def bisect(function : str, a : int, b : int, Epsilon : float) -> float :
+def false_position(function : str, a : int, b : int, Epsilon : float) -> float :
     if function(a) * function(b) >= 0:
         return None
     c = None
@@ -36,7 +36,7 @@ def main():
     b = int(input("Enter the value of b: "))
     Epsilon = float(input("Enter the value of ε: "))
     func = lambda x: eval(function)
-    root = bisect(func, a, b, Epsilon)
+    root = false_position(func, a, b, Epsilon)
     if root is not None:
         print(f"The value of root is :  {root:.{get_decimals(Epsilon)}f}")
     else:
