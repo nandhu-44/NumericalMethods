@@ -1,6 +1,6 @@
 # Write a program to find the roots of a non linear equation using Bisection method
 
-__import__("os").system('cls' if __import__("os").name == 'nt' else 'clear')
+from math import sin, cos, exp, log, tan, pi, e
 
 def bisect(function : str, a : int, b : int, Epsilon : float) -> float :
     if function(a) * function(b) >= 0:
