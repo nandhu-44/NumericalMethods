@@ -3,9 +3,9 @@ from NewtonsBackwardInterpolation import newton_backward_interpolation
 
 
 def main():
-    x = [int(i) for i in input("Enter the values of x: ").split()]
-    y = [int(i) for i in input("Enter the values of y: ").split()]
-    x0 = int(input("Enter the value of x0: "))
+    x = [float(i) for i in input("Enter the values of x: ").split()]
+    y = [float(i) for i in input("Enter the values of y: ").split()]
+    x0 = float(input("Enter the value of x0: "))
 
     median = len(x) // 2
     if x0 < x[median] or x0 > x[-1]:

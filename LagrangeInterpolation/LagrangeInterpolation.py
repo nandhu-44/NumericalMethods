@@ -13,9 +13,9 @@ def lagrange_interpolation(x, y, x0):
 
 
 def main():
-    x = [int(i) for i in input("Enter the values of x: ").split()]
-    y = [int(i) for i in input("Enter the values of y: ").split()]
-    x0 = int(input("Enter the value of x0: "))
+    x = [float(i) for i in input("Enter the values of x: ").split()]
+    y = [float(i) for i in input("Enter the values of y: ").split()]
+    x0 = float(input("Enter the value of x0: "))
 
     result = lagrange_interpolation(x, y, x0)
     print(f"The value of y at x = {x0} using Lagrange Interpolation is {result}")
