@@ -1,4 +1,4 @@
-# Write a program to estimate the value of a function for any intermediate x0 of the independent variable using Newton's backward interpolation formula.
+# Write a program to estimate the value of a function for any intermediate value of the independent variable using Newton's backward interpolation formula.
 
 
 from utils import *
